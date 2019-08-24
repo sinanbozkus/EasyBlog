@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace EasyBlog.DAL.Repositories
 {
@@ -18,32 +19,32 @@ namespace EasyBlog.DAL.Repositories
 
         public void Add(TEntity entity)
         {
-            throw new NotImplementedException();
+            _dbSet.Add(entity);
         }
 
         public void Delete(TEntity entity)
         {
-            throw new NotImplementedException();
+            _dbSet.Remove(entity);
         }
 
-        public TEntity Get(Func<TEntity, bool> predicate)
+        public TEntity Get(Expression<Func<TEntity, bool>> predicate)
         {
-            throw new NotImplementedException();
+            return _dbSet.SingleOrDefault(predicate);
         }
 
-        public IQueryable<TEntity> GetAll(Func<TEntity, bool> predicate = null)
+        public IQueryable<TEntity> GetAll(Expression<Func<TEntity, bool>> predicate = null)
         {
-            throw new NotImplementedException();
+            return predicate == null ? _dbSet : _dbSet.Where(predicate);
         }
 
         public TEntity GetById(int id)
         {
-            throw new NotImplementedException();
+            return _dbSet.Find(id);
         }
 
         public void Update(TEntity entity)
         {
-            throw new NotImplementedException();
+            _dbSet.Update(entity);
         }
     }
 }

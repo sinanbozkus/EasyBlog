@@ -1,5 +1,4 @@
 ﻿using EasyBlog.Core.Entities;
-using EasyBlog.DAL.Contexts;
 using EasyBlog.DAL.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System;

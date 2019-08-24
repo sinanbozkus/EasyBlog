@@ -1,8 +1,7 @@
 ﻿using EasyBlog.Core.Entities;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Linq.Expressions;
 
 namespace EasyBlog.DAL.Repositories
 {
@@ -11,8 +10,8 @@ namespace EasyBlog.DAL.Repositories
         void Add(TEntity entity);
         void Update(TEntity entity);
         void Delete(TEntity entity);
-        TEntity Get(Func<TEntity, bool> predicate);
+        TEntity Get(Expression<Func<TEntity, bool>> predicate);
         TEntity GetById(int id);
-        IQueryable<TEntity> GetAll(Func<TEntity, bool> predicate = null);
+        IQueryable<TEntity> GetAll(Expression<Func<TEntity, bool>> predicate = null);
     }
 }
