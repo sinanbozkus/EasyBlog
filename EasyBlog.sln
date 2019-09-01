@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBlog.Core", "EasyBlog.Core\EasyBlog.Core.csproj", "{1F9830F7-78D6-423A-98B2-617F1AECD879}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyBlog.BLL", "EasyBlog.BLL\EasyBlog.BLL.csproj", "{1F9830F7-78D6-423A-98B2-617F1AECD879}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBlog.DAL", "EasyBlog.DAL\EasyBlog.DAL.csproj", "{E4317C09-952F-4670-8C3B-8F632DAF3E38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyBlog.DAL", "EasyBlog.DAL\EasyBlog.DAL.csproj", "{E4317C09-952F-4670-8C3B-8F632DAF3E38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBlog.BLL", "EasyBlog.BLL\EasyBlog.BLL.csproj", "{E62E9844-E113-42DF-AFC5-BB19A1DBEFC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyBlog.UI", "EasyBlog.UI\EasyBlog.UI.csproj", "{F4FECFBD-A132-414C-BE45-2C0E04592732}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBlog.UI", "EasyBlog.UI\EasyBlog.UI.csproj", "{F4FECFBD-A132-414C-BE45-2C0E04592732}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyBlog.Domain", "EasyBlog.Domain\EasyBlog.Domain.csproj", "{7D06848A-C297-417D-A063-2C9D950EB783}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,14 @@ Global
 		{E4317C09-952F-4670-8C3B-8F632DAF3E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4317C09-952F-4670-8C3B-8F632DAF3E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4317C09-952F-4670-8C3B-8F632DAF3E38}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E62E9844-E113-42DF-AFC5-BB19A1DBEFC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E62E9844-E113-42DF-AFC5-BB19A1DBEFC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E62E9844-E113-42DF-AFC5-BB19A1DBEFC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E62E9844-E113-42DF-AFC5-BB19A1DBEFC1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F4FECFBD-A132-414C-BE45-2C0E04592732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F4FECFBD-A132-414C-BE45-2C0E04592732}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4FECFBD-A132-414C-BE45-2C0E04592732}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4FECFBD-A132-414C-BE45-2C0E04592732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D06848A-C297-417D-A063-2C9D950EB783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D06848A-C297-417D-A063-2C9D950EB783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D06848A-C297-417D-A063-2C9D950EB783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D06848A-C297-417D-A063-2C9D950EB783}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

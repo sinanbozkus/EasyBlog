@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EasyBlog.DAL\EasyBlog.DAL.csproj" />
+    <Folder Include="Types\" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-﻿using EasyBlog.Core.Entities;
+﻿using EasyBlog.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;

@@ -1,0 +1,10 @@
+﻿@model LoginViewModel
+
+<form asp-controller="Account" asp-action="Login" method="post">
+    <label asp-for="Username"></label>
+    <input type="text" asp-for="Username" />
+    <br /><br />
+    <label asp-for="Password"></label>
+    <input type="password" asp-for="Password" />
+    <button type="submit">Login</button>
+</form>

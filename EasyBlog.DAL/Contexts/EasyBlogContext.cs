@@ -1,5 +1,5 @@
-﻿using EasyBlog.Core.Entities;
-using EasyBlog.DAL.Mappings;
+﻿using EasyBlog.Domain.Entities;
+using EasyBlog.DAL.Config;
 using Microsoft.EntityFrameworkCore;
 
 namespace EasyBlog.DAL.Contexts
@@ -9,7 +9,7 @@ namespace EasyBlog.DAL.Contexts
         // https://docs.microsoft.com/en-us/ef/core/miscellaneous/configuring-dbcontext
         public EasyBlogContext(DbContextOptions<EasyBlogContext> options) : base(options)
         {
-
+            Database.EnsureCreated();
         }
 
         public DbSet<User> Users { get; set; }
@@ -18,9 +18,9 @@ namespace EasyBlog.DAL.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new UserMap());
-            modelBuilder.ApplyConfiguration(new CategoryMap());
-            modelBuilder.ApplyConfiguration(new PostMap());
+            modelBuilder.ApplyConfiguration(new UserConfiguration());
+            modelBuilder.ApplyConfiguration(new CategoryConfiguration());
+            modelBuilder.ApplyConfiguration(new PostConfiguration());
 
             // todo review
             //modelBuilder.Entity<User>().HasData(new User
